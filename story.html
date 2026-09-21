@@ -2,50 +2,52 @@
 <html>
 <head>
   <title>My Darla</title>
-  <style>
-    body{
-      margin:0;
-      background:linear-gradient(#8BCBFF,#5FAEFF);
-      color:white;
-      font-family:Arial,sans-serif;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      height:100vh;
-      overflow:hidden;
-      text-align:center;
-    }
-    h1{font-size:56px;}
-    .btn{
-      padding:15px 40px;
-      background:#2E7BFF;
-      color:white;
-      text-decoration:none;
-      border-radius:40px;
-      font-weight:bold;
-    }
-    .heart{position:fixed;top:-10%;animation:fall 7s linear infinite;}
-    @keyframes fall{to{transform:translateY(110vh);opacity:0;}}
-  </style>
-</head>
-<body>
+    <style>
+        body{
+              margin:0;
+                    height:100vh;
+                          display:flex;
+                                justify-content:center;
+                                      align-items:center;
+                                            background:linear-gradient(#8BCBFF,#5FAEFF);
+                                                  overflow:hidden;
+                                                        font-family:Arial,sans-serif;
+                                                              color:white;
+                                                                    text-align:center;
+                                                                        }
+                                                                            h1{font-size:55px;}
+                                                                                .btn{
+                                                                                      display:inline-block;
+                                                                                            margin-top:20px;
+                                                                                                  padding:15px 35px;
+                                                                                                        background:#2E7BFF;
+                                                                                                              color:white;
+                                                                                                                    text-decoration:none;
+                                                                                                                          border-radius:40px;
+                                                                                                                                font-weight:bold;
+                                                                                                                                    }
+                                                                                                                                        .heart{position:fixed;top:-10%;animation:fall 7s linear infinite;}
+                                                                                                                                            @keyframes fall{to{transform:translateY(110vh);opacity:0;}}
+                                                                                                                                              </style>
+                                                                                                                                              </head>
+                                                                                                                                              <body>
 
-<div>
-  <h1>MY DARLA</h1>
-  <p>Click ENTER to open our memories ♡</p>
-  <a class="btn" href="story.html">ENTER ♡</a>
-</div>
+                                                                                                                                              <div>
+                                                                                                                                                <h1>MY DARLA</h1>
+                                                                                                                                                  <p>Click ENTER to open our memories ♡</p>
+                                                                                                                                                    <a class="btn" href="story.html">ENTER ♡</a>
+                                                                                                                                                    </div>
 
-<script>
-for(let i=0;i<25;i++){
-  let h=document.createElement("div");
-  h.className="heart";
-  h.innerHTML="🤍";
-  h.style.left=Math.random()*100+"vw";
-  h.style.animationDelay=Math.random()*5+"s";
-  document.body.appendChild(h);
-}
-</script>
+                                                                                                                                                    <script>
+                                                                                                                                                    for(let i=0;i<25;i++){
+                                                                                                                                                      let h=document.createElement("div");
+                                                                                                                                                        h.className="heart";
+                                                                                                                                                          h.innerHTML="🤍";
+                                                                                                                                                            h.style.left=Math.random()*100+"vw";
+                                                                                                                                                              h.style.animationDelay=Math.random()*5+"s";
+                                                                                                                                                                document.body.appendChild(h);
+                                                                                                                                                                }
+                                                                                                                                                                </script>
 
-</body>
-</html>
+                                                                                                                                                                </body>
+                                                                                                                                                                </html>
