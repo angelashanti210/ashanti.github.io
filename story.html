@@ -1,74 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Our Story</title>
-<style>
-body{
-  margin:0;
-    padding:25px;
-      background:#8BCBFF;
-        color:white;
-          font-family:Arial,sans-serif;
-            line-height:1.8;
-              overflow-x:hidden;
-              }
-              .box{
-                background:rgba(255,255,255,.18);
-                  border-radius:20px;
-                    padding:20px;
-                      margin-bottom:20px;
-                      }
-                      h1,h2{text-align:center;}
+  <title>My Darla</title>
+  <style>
+    body{
+      margin:0;
+      background:linear-gradient(#8BCBFF,#5FAEFF);
+      color:white;
+      font-family:Arial,sans-serif;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      overflow:hidden;
+      text-align:center;
+    }
+    h1{font-size:56px;}
+    .btn{
+      padding:15px 40px;
+      background:#2E7BFF;
+      color:white;
+      text-decoration:none;
+      border-radius:40px;
+      font-weight:bold;
+    }
+    .heart{position:fixed;top:-10%;animation:fall 7s linear infinite;}
+    @keyframes fall{to{transform:translateY(110vh);opacity:0;}}
+  </style>
+</head>
+<body>
 
-                      .heart{
-                        position:fixed;
-                          top:-10%;
-                            font-size:22px;
-                              animation:fall linear infinite;
-                              }
-                              @keyframes fall{
-                                to{
-                                    transform:translateY(110vh);
-                                        opacity:0;
-                                          }
-                                          }
-                                          </style>
-                                          </head>
-                                          <body>
+<div>
+  <h1>MY DARLA</h1>
+  <p>Click ENTER to open our memories ♡</p>
+  <a class="btn" href="story.html">ENTER ♡</a>
+</div>
 
-                                          <h1>Our Story</h1>
+<script>
+for(let i=0;i<25;i++){
+  let h=document.createElement("div");
+  h.className="heart";
+  h.innerHTML="🤍";
+  h.style.left=Math.random()*100+"vw";
+  h.style.animationDelay=Math.random()*5+"s";
+  document.body.appendChild(h);
+}
+</script>
 
-                                          <div class="box">
-                                            <h2>My Darla</h2>
-                                              <p>Look how good God is...</p>
-                                              </div>
-
-                                              <div class="box">
-                                                <h2>MY RANDOM MESSAGE</h2>
-                                                  <p>Your letter here.</p>
-                                                  </div>
-
-                                                  <div class="box">
-                                                    <h2>NGL</h2>
-                                                      <p>Your letter here.</p>
-                                                      </div>
-
-                                                      <div class="box">
-                                                        <h2>Inuman</h2>
-                                                          <p>Your letter here.</p>
-                                                          </div>
-
-                                                          <script>
-                                                          for(let i=0;i<25;i++){
-                                                            const h=document.createElement("div");
-                                                              h.className="heart";
-                                                                h.innerHTML="🤍";
-                                                                  h.style.left=Math.random()*100+"vw";
-                                                                    h.style.animationDuration=(5+Math.random()*5)+"s";
-                                                                      h.style.animationDelay=Math.random()*5+"s";
-                                                                        document.body.appendChild(h);
-                                                                        }
-                                                                        </script>
-
-                                                                        </body>
-                                                                        </html>
+</body>
+</html>
