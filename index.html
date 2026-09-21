@@ -1,20 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>💙 Ashanti</title>
+<title>My Darla</title>
 <style>
+*{margin:0;padding:0;box-sizing:border-box;}
 body{
-margin:0;
-background:#A7D8FF;
-font-family:Arial;
-text-align:center;
-color:white;
+  background:linear-gradient(#8BCBFF,#5FAEFF);
+  height:100vh;
+  overflow:hidden;
+  font-family:Arial,sans-serif;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+h1{
+  font-size:58px;
+  text-shadow:0 0 15px white;
+}
+p{margin-top:10px;}
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:15px 40px;
+  background:#2E7BFF;
+  color:#fff;
+  text-decoration:none;
+  border-radius:40px;
+  font-weight:bold;
+}
+.heart{
+  position:absolute;
+  top:-10%;
+  font-size:24px;
+  animation:fall linear infinite;
+}
+@keyframes fall{
+  to{
+    transform:translateY(110vh);
+    opacity:0;
+  }
 }
 </style>
 </head>
 <body>
-<h1>💙 I Love You 💙</h1>
-<p>Welcome to our special website.</p>
-<p>🤍 💙 🤍 💙 🤍</p>
+
+<div>
+  <div style="font-size:48px;">☁️</div>
+  <h1>MY<br>DARLA</h1>
+  <p>Click ENTER to open our memories ♡</p>
+  <p>Our soundtrack will start automatically.</p>
+  <a class="btn" href="#story">ENTER ♡</a>
+</div>
+
+<script>
+for(let i=0;i<25;i++){
+  let h=document.createElement("div");
+  h.className="heart";
+  h.innerHTML="🤍";
+  h.style.left=Math.random()*100+"vw";
+  h.style.animationDuration=(5+Math.random()*5)+"s";
+  h.style.animationDelay=Math.random()*5+"s";
+  document.body.appendChild(h);
+}
+</script>
+
 </body>
 </html>
