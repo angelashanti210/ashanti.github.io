@@ -1,0 +1,38 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  height:100vh;
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:Georgia, serif;
+  background:url("avatar.jpg") center/cover no-repeat;
+}
+
+.overlay{
+  text-align:center;
+  background:rgba(0,20,60,.45);
+  padding:30px;
+  border-radius:25px;
+  backdrop-filter:blur(8px);
+}
+
+h1{
+  color:white;
+  font-size:42px;
+  margin-bottom:20px;
+}
+
+button{
+  background:#4da6ff;
+  color:white;
+  border:none;
+  padding:14px 32px;
+  border-radius:30px;
+  font-size:18px;
+}
