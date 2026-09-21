@@ -28,6 +28,29 @@ h1{
   margin-bottom:20px;
 }
 
+.overlay{
+  max-width:700px;
+  height:85vh;
+  overflow-y:auto;
+}
+
+p{
+  color:white;
+  line-height:1.8;
+  text-align:left;
+  margin:18px 0;
+}
+
+h2{
+  color:#9fd3ff;
+  margin-top:28px;
+}
+
+img{
+  width:100%;
+  border-radius:18px;
+  margin:16px 0;
+}
 button{
   background:#4da6ff;
   color:white;
