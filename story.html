@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Our Story</title>
+<style>
+body{
+  margin:0;
+    padding:25px;
+      background:#8BCBFF;
+        color:white;
+          font-family:Arial,sans-serif;
+            line-height:1.8;
+              overflow-x:hidden;
+              }
+              .box{
+                background:rgba(255,255,255,.18);
+                  border-radius:20px;
+                    padding:20px;
+                      margin-bottom:20px;
+                      }
+                      h1,h2{text-align:center;}
+
+                      .heart{
+                        position:fixed;
+                          top:-10%;
+                            font-size:22px;
+                              animation:fall linear infinite;
+                              }
+                              @keyframes fall{
+                                to{
+                                    transform:translateY(110vh);
+                                        opacity:0;
+                                          }
+                                          }
+                                          </style>
+                                          </head>
+                                          <body>
+
+                                          <h1>Our Story</h1>
+
+                                          <div class="box">
+                                            <h2>My Darla</h2>
+                                              <p>Look how good God is...</p>
+                                              </div>
+
+                                              <div class="box">
+                                                <h2>MY RANDOM MESSAGE</h2>
+                                                  <p>Your letter here.</p>
+                                                  </div>
+
+                                                  <div class="box">
+                                                    <h2>NGL</h2>
+                                                      <p>Your letter here.</p>
+                                                      </div>
+
+                                                      <div class="box">
+                                                        <h2>Inuman</h2>
+                                                          <p>Your letter here.</p>
+                                                          </div>
+
+                                                          <script>
+                                                          for(let i=0;i<25;i++){
+                                                            const h=document.createElement("div");
+                                                              h.className="heart";
+                                                                h.innerHTML="🤍";
+                                                                  h.style.left=Math.random()*100+"vw";
+                                                                    h.style.animationDuration=(5+Math.random()*5)+"s";
+                                                                      h.style.animationDelay=Math.random()*5+"s";
+                                                                        document.body.appendChild(h);
+                                                                        }
+                                                                        </script>
+
+                                                                        </body>
+                                                                        </html>
