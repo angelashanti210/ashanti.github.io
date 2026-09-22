@@ -8,3 +8,28 @@ body{
   background:url("./avatar.jpg") center center/cover no-repeat;
   font-family:Georgia, serif;
 }
+.overlay{
+  width:85%;
+  max-width:340px;
+  background:rgba(10,30,80,.45);
+  padding:30px 20px;
+  border-radius:28px;
+  text-align:center;
+  backdrop-filter:blur(10px);
+}
+
+h1{
+  color:white;
+  font-size:42px;
+  margin-bottom:20px;
+  text-shadow:0 0 15px #6fb6ff;
+}
+
+button{
+  background:#4da6ff;
+  color:white;
+  border:none;
+  padding:14px 32px;
+  border-radius:30px;
+  font-size:18px;
+}
