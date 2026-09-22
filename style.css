@@ -33,3 +33,18 @@ button{
   border-radius:30px;
   font-size:18px;
 }
+.overlay{
+  height:90vh;
+  overflow-y:auto;
+  scroll-behavior:smooth;
+}
+
+section{
+  margin:50px 0;
+}
+
+img{
+  width:100%;
+  border-radius:18px;
+  margin:15px 0;
+}
