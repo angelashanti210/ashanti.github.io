@@ -1,61 +1,10 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
 body{
-  height:100vh;
-  overflow:hidden;
+  margin:0;
+  min-height:100vh;
   display:flex;
   justify-content:center;
   align-items:center;
+  overflow:hidden;
+  background:url("./avatar.jpg") center center/cover no-repeat;
   font-family:Georgia, serif;
-  background:url("avatar.jpg") center/cover no-repeat;
-}
-
-.overlay{
-  text-align:center;
-  background:rgba(0,20,60,.45);
-  padding:30px;
-  border-radius:25px;
-  backdrop-filter:blur(8px);
-}
-
-h1{
-  color:white;
-  font-size:42px;
-  margin-bottom:20px;
-}
-
-.overlay{
-  max-width:700px;
-  height:85vh;
-  overflow-y:auto;
-}
-
-p{
-  color:white;
-  line-height:1.8;
-  text-align:left;
-  margin:18px 0;
-}
-
-h2{
-  color:#9fd3ff;
-  margin-top:28px;
-}
-
-img{
-  width:100%;
-  border-radius:18px;
-  margin:16px 0;
-}
-button{
-  background:#4da6ff;
-  color:white;
-  border:none;
-  padding:14px 32px;
-  border-radius:30px;
-  font-size:18px;
 }
