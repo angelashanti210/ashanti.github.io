@@ -1,4 +1,23 @@
-body{
+img{
+  width:100%;
+  max-width:280px;
+  display:block;
+  margin:18px auto;
+  border-radius:18px;
+  object-fit:cover;
+  box-shadow:0 8px 20px rgba(0,0,0,.35);
+}
+
+p{
+  color:white;
+  line-height:1.7;
+  text-align:center;
+}
+
+h2{
+  color:white;
+  text-align:center;
+}body{
   margin:0;
   background:url("./file_0000000085ac81fabba7bb4ec541344f.png") center/cover fixed;
   overflow-x:hidden;
